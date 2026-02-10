@@ -1,0 +1,494 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+button {
+  background: #e63946;          /* main red */
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 8px;
+  box-shadow: 0 8px 18px rgba(230, 57, 70, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+button:hover {
+  background: #d62839;          /* darker red on hover */
+}
+
+button:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.25);
+}
+
+
+button:hover {
+  background: #ff2f5e;
+}
+
+#musicBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  font-size: 22px;
+  animation: float 3s linear forwards;
+}
+
+@keyframes float {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-180px); opacity: 0; }
+}
+
+/* Moving button */
+.runaway {
+  position: absolute;
+}
+@keyframes pulse {
+  0% { background-size: 100% 100%; }
+  50% { background-size: 110% 110%; }
+  100% { background-size: 100% 100%; }
+}
+
+body {
+  animation: pulse 6s infinite;
+}
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 25px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+/* ---------- NIGHT THEME ---------- */
+:root {
+  --bg1: #0f1020;
+  --bg2: #1a1c3a;
+  --card: #15162b;
+  --text: #e9e9ff;
+  --accent: #ff6fae;
+  --accent-2: #8f7cff;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(1200px 800px at 50% -10%, var(--bg2), var(--bg1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont;
+  color: var(--text);
+  overflow: hidden;
+  animation: nightPulse 8s ease-in-out infinite;
+}
+
+@keyframes nightPulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.05); }
+  100% { filter: brightness(1); }
+}
+
+.card {
+  background: linear-gradient(180deg, #1b1d3a, var(--card));
+  padding: 28px;
+  border-radius: 22px;
+  text-align: center;
+  width: 340px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 40px rgba(143,124,255,0.15);
+  animation: fadeIn .6s ease;
+}
+
+h1 { margin-top: 0; }
+p { opacity: .95; }
+
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0b0c1a;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 8px;
+  box-shadow: 0 8px 20px rgba(255,111,174,.35);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+button:active {
+  transform: scale(.96);
+  box-shadow: 0 4px 10px rgba(255,111,174,.25);
+}
+
+#musicBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* floating particles */
+.float {
+  position: absolute;
+  font-size: 18px;
+  animation: floatUp 2s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-140px); opacity: 0; }
+}
+
+/* mobile polish */
+@media (max-width: 480px) {
+  .card { width: 92%; }
+  button { width: 100%; }
+}
+/* FORCE RED BUTTONS — OVERRIDE EVERYTHING */
+button {
+  background-color: red !important;
+  color: white !important;
+}
+/* ================= ANCIENT LETTER ================= */
+
+.letter-wrap {
+  background: radial-gradient(circle at top,
+    #f7e7c1,
+    #e8d3a3
+  );
+  padding: 28px 24px;
+  border-radius: 12px;
+  box-shadow:
+    inset 0 0 30px rgba(0,0,0,0.15),
+    0 12px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(120, 90, 40, 0.4);
+  position: relative;
+  box-shadow:
+  inset 0 0 30px rgba(0,0,0,0.15),
+  0 0 40px rgba(255, 183, 77, 0.25),
+  0 12px 40px rgba(0,0,0,0.4);
+  max-height: 70vh;        /* visible height */
+  overflow-y: auto;        /* enable vertical scroll */
+  padding-right: 10px;     /* space for scrollbar */
+}
+
+.letter-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      rgba(0,0,0,0.03),
+      rgba(0,0,0,0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.letter-title {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #5a3e1b;
+}
+
+.letter-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #4a3215;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  text-align: right;
+  margin-top: 24px;
+  color: #3b240f;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* ================= CANDLE FLICKER ================= */
+
+.letter-wrap.flicker {
+  animation: candleGlow 1.6s infinite alternate ease-in-out;
+}
+
+@keyframes candleGlow {
+  0% {
+    box-shadow:
+      inset 0 0 30px rgba(0,0,0,0.15),
+      0 0 30px rgba(255, 180, 90, 0.25),
+      0 12px 40px rgba(0,0,0,0.4);
+  }
+  50% {
+    box-shadow:
+      inset 0 0 32px rgba(0,0,0,0.18),
+      0 0 38px rgba(255, 200, 120, 0.35),
+      0 14px 44px rgba(0,0,0,0.45);
+  }
+  100% {
+    box-shadow:
+      inset 0 0 28px rgba(0,0,0,0.14),
+      0 0 26px rgba(255, 160, 70, 0.22),
+      0 10px 36px rgba(0,0,0,0.35);
+  }
+}
+/* ================= HEARTBEAT MOMENT ================= */
+
+.heartbeat {
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  20%  { transform: scale(1.04); }
+  40%  { transform: scale(1); }
+  60%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.dim {
+  opacity: 0.75;
+  transition: opacity 0.6s ease;
+}
+/* ================= STEP FADE ================= */
+
+#card {
+  transition: opacity 0.35s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+/* ================= BACKGROUND STARS ================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 40% 70%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 50%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 10% 90%, #fff, transparent);
+  background-size: 300px 300px;
+  animation: twinkle 2s infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.4; }
+  to   { opacity: 0.9; }
+}
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+/* ================= SHOOTING STAR ================= */
+
+.shooting-star {
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #fff, rgba(255,255,255,0));
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: shoot 1.2s linear forwards;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes shoot {
+  from {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+  to {
+    transform: translate(120vw, 120vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* ================= MOON GLOW ================= */
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 380px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(220, 230, 255, 0.35) 0%,
+    rgba(220, 230, 255, 0.18) 35%,
+    rgba(220, 230, 255, 0.08) 55%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -2;
+  filter: blur(6px);
+}
+
+/* Subtle breathing glow */
+@keyframes moonPulse {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  50%  { transform: translate(-50%, -50%) scale(1.04); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+body::after {
+  animation: moonPulse 4s ease-in-out infinite;
+}
+#text, .letter-text {
+  white-space: pre-wrap;
+}
+    /* ================= SLIDESHOW FADE ================= */
+
+#slideContent {
+  transition: opacity 1.2s ease-in-out;
+  opacity: 1;
+}
+
+
+.fade-slide {
+  opacity: 0.5;
+}
+.letter-wrap::-webkit-scrollbar {
+  width: 6px;
+}
+
+.letter-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.25);
+  border-radius: 10px;
+}
+.letter-text em {
+  font-style: italic;
+  opacity: 0.9;
+}
+.letter-text em {
+  font-style: italic;
+  font-weight: 500;
+}
+.letter-text em {
+  font-style: normal;          /* don't rely on font italics */
+  display: inline-block;
+  transform: skewX(-8deg);     /* fake italic slant */
+  opacity: 0.9;
+}
+.letter-text em {
+  font-family: "Noto Serif Devanagari", serif;
+  font-style: italic;
+}
+/* ================= PRETTY POPPER ================= */
+
+.popper {
+  position: fixed;
+  font-size: 18px;
+  pointer-events: none;
+  animation: popperFloat 1.6s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes popperFloat {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(var(--x), -80px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 1.4), 120px) scale(0.9);
+    opacity: 0;
+  }
+}
+/* ================= FIREWORKS ================= */
+
+.firework {
+  position: fixed;
+  font-size: 22px;
+  pointer-events: none;
+  animation: fireworkPop 1.6s ease-out forwards;
+}
+
+@keyframes fireworkPop {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(var(--x), var(--y)) scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 1.4), calc(var(--y) * 1.4)) scale(0.8);
+    opacity: 0;
+  }
+}
+

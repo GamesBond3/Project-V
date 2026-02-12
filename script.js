@@ -519,7 +519,7 @@ function finalYes() {
 
   setTimeout(() => {
     showFinalPhoto(); // 👉 NOW go to core memories slideshow
-  }, 2500);
+  }, 4000);
 }
 
 function finalNo() {
@@ -536,7 +536,7 @@ function finalNo() {
 
   setTimeout(() => {
     showFinalPhoto(); // 👉 still show memories
-  }, 2500);
+  }, 4000);
 }
 
 /* ================= FINAL PHOTO ================= */

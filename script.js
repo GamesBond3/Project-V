@@ -512,6 +512,7 @@ function finalYes() {
   card.innerHTML = `
     <h1>NO FREAKING WAY, you said yes 😭💖</h1>
     <p>You just made my whole year 😭😭.</p>
+    <p>Can you please send me the screenshot of this. 🥺</p>
   `;
 
   fireworkBurst();
@@ -529,6 +530,7 @@ function finalNo() {
     <p>I completely understand.</p>
     <p style="opacity:0.75; margin-top:10px;">
       Thank you for being there for me.
+      Can you please send me the screenshot of this. 🥺
     </p>
   `;
 

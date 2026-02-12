@@ -269,7 +269,57 @@ function showLetterBeforeProposal() {
 
   const letter = 
 `Babbu,
+In a world that rushes endlessly,
+you became a moment I wanted to pause.
+Some feelings deserve to be written,
+not rushed.
+Itna wakt hogaya tujhe videsh gaye hue, 
+I still can't stop missing you everyday, 
+aaj bhi yaad aate hai woh din jab hum 
+roz mila karte the but life has its own 
+ways to set people apart.
 
+Dimag mein hazar chize chalti rehti
+abhi bhi chal rahi h while i am 
+writing this, ki kya likhu jise tujhe 
+lage ki ye nadan ladka badal chuka,
+har roz iss khat ko thoda thoda likhta 
+hu. Har line mein, har lafaz mein tujhe 
+paane ki chah h, Kabhi kabhi sochta hu 
+ki kya tu sachi mein nhi dekh paati, 
+ya jaanke ignore karti hai, bhagwan 
+jaane. Sochta hu ki kyu isse koi farak 
+nhi padta,ki itna bura kese ban gaya mein
+iski life mein.
+
+Phir samjh bhi aata hai ki ab shayad 
+tujhe meri need nhi h, I fucked up at 
+the worst moment possible zindagi bhar 
+rahega iss baat ka guilt.
+I have no idea what keeps me driving to
+get you back,to respectfully adore you,
+admire you, care for you, bss tera 
+khyal rakhne ki ikcha hoti hai.
+
+Haan tune bola hai ruk ja thode time,
+only you know kyu mein toh sirf guess
+kar sakta hu, par haan if you think 
+mein piche hatt jaaunga time ke sath
+baat bhoool jaunga that won't be 
+happening, coz mein bohot zyada ziddi
+hogaya hu, toh mein toh jaha hu wahi
+hu bss yahi sochta hu ki
+
+Kaash tu mujhe ek akhri mauka aur de,
+kaash mein kabhi galti na karu,
+kaash sari baatein badal jaaye.
+
+<em> तेरी यादों को पसंद आएगी मेरी आँखों की नमी,
+मैं अगर हंसना भी चाहूं, तो रुला देती हूं तेरी कमी
+देखा जाए तो सवेरा आज भी हो सकता है,
+एक और आखिरी फेरा हो सकता है,
+आशिक मोहब्बत में कितने chutiya हो जाते है,
+मुझे आज भी लगता है वो शक्स मेरा हो सकता है। </em>
 
 Before I ask you something important,
 I know you told me to wait but

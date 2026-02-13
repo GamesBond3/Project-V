@@ -260,7 +260,7 @@ function showLetterBeforeProposal() {
       <div id="letterText" class="letter-text"></div>
 
       <div class="signature" id="signature" style="opacity:0;">
-        — Yours
+        — Your Servant, Mr Baans
       </div>
     </div>
 
@@ -417,7 +417,7 @@ function renderBpSlide() {
 const beforeProposalSlides = [
   {
     src: "photo4.jpg",
-    text: "My life has been lifeless like this"
+    text: "My life has been empty like this"
   },
   {
     src: "photo1.jpg",
@@ -512,7 +512,6 @@ function finalYes() {
   card.innerHTML = `
     <h1>NO FREAKING WAY, you said yes 😭💖</h1>
     <p>You just made my whole year 😭😭.</p>
-    <p>Can you please send me the screenshot of this. 🥺</p>
   `;
 
   fireworkBurst();
@@ -530,7 +529,6 @@ function finalNo() {
     <p>I completely understand.</p>
     <p style="opacity:0.75; margin-top:10px;">
       Thank you for being there for me.
-      Can you please send me the screenshot of this. 🥺
     </p>
   `;
 
